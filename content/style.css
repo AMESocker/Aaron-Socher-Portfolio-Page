@@ -1,0 +1,25 @@
+
+.palateA {/*Color Palate*/
+    --1:#04009A;
+    --2:#77ACF1;
+    --3:#3EDBF0;
+    --4:#C0FEFC;
+}
+body,a {
+    background-color: #04009a;
+    color: #C0FEFC;
+
+}
+#Introduction {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+ #Name-Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 200px;
+ }
