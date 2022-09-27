@@ -13,7 +13,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
     GIVEN I need to sample a potential employee's previous work
     
-**TODO** (framework completed)
+**Completed**
 - WHEN I load their portfolio
 - THEN I am presented with the developer's name, a recent photo, and links to sections about them, their work, and how to contact them
 
@@ -25,7 +25,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 - WHEN I click on the link to the section about their work
 - THEN the UI scrolls to a section with titled images of the developer's applications
 
-**TODO**    
+**Completed**   
 - WHEN I am presented with the developer's first application
 - THEN that application's image should be larger in size than the others
 Notes:Showoff app

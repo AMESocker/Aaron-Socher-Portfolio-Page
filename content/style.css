@@ -13,28 +13,60 @@ a {
 }
 /*Double check case*/
 #Header {
-    padding: 5px;
+    padding: 0px;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     background-color: var(--2);
-    
+    width: 100%;
 }
 .Header-Items {
     padding: 20px;
     margin: 5px;
+}
+#main {
+    display:flex;
     
+    flex-direction: column;
+    padding-top: 25px;
+    max-height: 160px;
 }
 #Introduction {
     display: flex;
+    flex-wrap: wrap;
     justify-content:flex-start;
-    align-content:center;
     flex-direction: row;  
+    align-items: center;
+    margin: 5px;
+    position: relative;
+    max-height: 160px;
 }
 #Name-Links {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction:column;
+    max-height: 160px;
+    justify-content: space-evenly;
+    align-content: flex-start;
 
  }
+ #applications {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 100%vp;
+    
+ }
+#smallApps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+    max-width: 620px;*/
+}
+.apps{
+    padding: 5px;
 
-
+}
