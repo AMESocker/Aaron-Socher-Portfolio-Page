@@ -2,7 +2,7 @@
 
 ## Description
 
-Independent work guided with desired objectives as defined by BCS
+This is a starter page to display Aaron Socher's knowledge of web applications. As well as contact information.
 
 ## Installation
 
