@@ -53,6 +53,7 @@ a {
  #applications {
     
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 5px;
@@ -69,4 +70,13 @@ a {
 .apps{
     padding: 5px;
 
+}
+img {
+    width: 100%;
+}
+@media screen and (max-width: 400px) {
+    #applications{
+        align-items: stretch;
+        max-width: 400px;
+    }
 }
