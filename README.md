@@ -1,4 +1,4 @@
-# Aaron Socher Landing Page
+# Aaron Socher Portfolio Page
 
 ## Description
 
