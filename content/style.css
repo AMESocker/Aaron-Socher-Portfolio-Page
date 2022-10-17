@@ -1,8 +1,15 @@
-:root {/*Color Palate*/
-    --1:#04009A;
+/*Color Palates*/
+/* :root {
+    --1:#514e96;
     --2:#77ACF1;
     --3:#3EDBF0;
-    --4:#C0FEFC;
+    --4:#C0FEFC; 
+} */
+:root {
+    --1:#98A8F8;
+    --2:#BCCEF8;
+    --3:#CDFCF6;
+    --4:#FAF7F0;
 }
 body {
     background-color:var(--1);
@@ -32,23 +39,25 @@ a {
     max-height: 160px;
 }
 #Introduction {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
     flex-direction: row;  
     align-items: center;
     margin: 5px;
     position: relative;
-    max-height: 160px;
+    min-height: 250px; */
 }
 #Name-Links {
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
     max-height: 160px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     align-content: flex-start;
-
+ }
+ .ProfileInfo{
+    padding:5px;
  }
  #applications {
     
