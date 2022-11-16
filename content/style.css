@@ -37,8 +37,9 @@ a {
     flex-direction: column;
     padding-top: 25px;
     max-height: 160px;
+    
 }
-#Introduction {
+/*#Introduction {
     /* display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
@@ -46,8 +47,8 @@ a {
     align-items: center;
     margin: 5px;
     position: relative;
-    min-height: 250px; */
-}
+    min-height: 250px;
+} */
 #Name-Links {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +75,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;   
-    max-width: 620px;*/
+    max-width: 620px;
 }
 .apps{
     padding: 5px;
