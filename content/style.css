@@ -59,6 +59,8 @@ a {
  }
  .ProfileInfo{
     padding:5px;
+    color: black;
+    justify-content: center;
  }
  #applications {
     
