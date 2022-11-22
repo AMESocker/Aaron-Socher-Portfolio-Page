@@ -39,7 +39,8 @@ a {
     max-height: 160px;
     
 }
-/*#Introduction {
+#Introduction {
+    color: black;
     /* display: flex;
     flex-wrap: wrap;
     justify-content:flex-start;
@@ -48,7 +49,7 @@ a {
     margin: 5px;
     position: relative;
     min-height: 250px;
-} */
+}
 #Name-Links {
     display: flex;
     flex-wrap: wrap;
@@ -92,4 +93,8 @@ img {
         align-items: stretch;
         max-width: 400px;
     }
+}
+
+.card-link {
+    color: black;
 }
