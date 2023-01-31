@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a starter page to display Aaron Socher's knowledge of web applications. As well as contact information.
+This is a starter page to display Aaron Socher's knowledge of web applications. As well as contact information.  
 [Link to Deployed page](https://amesocker.github.io/Aaron-Socher-Portfolio-Page/)
 
 ## Installation

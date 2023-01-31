@@ -98,3 +98,6 @@ img {
 .card-link {
     color: black;
 }
+img.d-inline-block.align-text-top {
+    height: 60px;
+}
