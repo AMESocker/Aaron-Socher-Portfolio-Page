@@ -1,16 +1,18 @@
 /*Color Palates*/
-/* :root {
+:root {
+    padding:0px;
+    margin: 0px;
     --1:#514e96;
     --2:#77ACF1;
     --3:#3EDBF0;
     --4:#C0FEFC; 
-} */
-:root {
+}
+/* :root {
     --1: #98A8F8;
     --2: #BCCEF8;
     --3: #CDFCF6;
     --4: #FAF7F0;
-}
+} */
 
 body {
     background-color: var(--1);
@@ -18,7 +20,7 @@ body {
 }
 
 a {
-    color: var(--4);
+    color: var(--1);
 }
 
 /*Double check case*/
@@ -38,14 +40,16 @@ a {
 
 #main {
     display: flex;
+    flex-flow: row wrap;
     flex-wrap: wrap;
     flex-direction: column;
     padding-top: 25px;
     max-height: 160px;
     align-content: space-evenly;
+    
 }
 
-#Introduction {
+#Introduction.card {
     color: black;
     /* display: flex; */
     /* flex-wrap: wrap; */
@@ -55,6 +59,9 @@ a {
     margin: 5px;
     position: absolute;
     min-height: 420px;
+    width: 18rem;
+    border-radius: 200px 200px 10px 10px;
+    margin-left: 50px;
 }
 
 #Name-Links {
@@ -62,8 +69,14 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 160px;
+    padding: 10px; 
+    height: 16px; 
+    position: relative;
+    max-width: 500px;
     /* justify-content: space-evenly; */
-    align-content: flex-start;
+    /* align-content: flex-start; */
+    /* width: 1000px */
+    /* margin-left: 330px; */
 }
 
 .ProfileInfo {
@@ -73,32 +86,74 @@ a {
 }
 
 #applications {
-
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    width: 100%vp;
-
+    /* width: 100%vp; */
+    
 }
 
+#Top-Application {
+    border-radius: 15px;
+    width: 610px;
+    height:360px;
+    background-color: white;
+    background-image:url("./images/Screenshot-2023-02-17-094839.jpg");
+    background-size:610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#Top-Application:hover{
+    background-image:url("./images/chrome-capture-2023-1-17(1).gif");
+} 
+.PasswordGenerator {
+    font-weight: 900;
+    margin: 15px;
+    background-color: var(--3);
+    padding: 7px;
+    border-radius: 7px;
+    color: black;
+    text-decoration: none;
+    
+}
 #smallApps {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 620px;
+    width: 620px;
 }
 
 .apps {
     padding: 5px;
+    /* padding-left: 125px; */
     font-size: 30px;
-
+    width: 620px;
+   
 }
 
 img {
     width: 100%;
+     border-radius: 15px;
+}
+img.card-img-top {
+    border-radius: 200px; 
+    padding: 5px
+}
+
+
+.card-link {
+    color: black;
+}
+
+img.d-inline-block.align-text-top {
+    height: 60px;
+    border-radius: 30px;
 }
 
 @media screen and (max-width: 400px) {
@@ -108,15 +163,7 @@ img {
     } */
 }
 
-.card-link {
-    color: black;
-}
-
-img.d-inline-block.align-text-top {
-    height: 60px;
-}
-
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1172px) {
     #main {
         display: flex;
         flex-flow: row wrap;
@@ -124,17 +171,20 @@ img.d-inline-block.align-text-top {
         flex-wrap: wrap;
         align-content: stretch;
         align-items: flex-start;
+        justify-content: center;
     }
 
-    #Introduction {
+    #Introduction.card {
         color: black;
         /* display: flex; */
         /* flex-wrap: wrap; */
         /* justify-content:flex-start; */
         flex-direction: column;
         align-items: center;
-        margin: 5px;
+        margin: 55px;
         position: relative;
         min-height: 420px;
+        /* margin-left: 0px; */
+        padding: 0px
     }
 }
