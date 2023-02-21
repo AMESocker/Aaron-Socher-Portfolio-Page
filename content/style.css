@@ -59,7 +59,7 @@ a {
     margin: 5px;
     position: absolute;
     min-height: 420px;
-    width: 18rem;
+    width: 225px;
     border-radius: 200px 200px 10px 10px;
     margin-left: 50px;
 }
@@ -69,7 +69,7 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 160px;
-    padding: 10px; 
+    padding: 0px; 
     height: 16px; 
     position: relative;
     max-width: 500px;
@@ -86,32 +86,34 @@ a {
 }
 
 #applications {
-    
+  
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    /* width: 100%vp; */
+    max-width: 100%;
+    padding-left: 296px;
+    position: relative;
+    
     
 }
 
-#Top-Application {
+.Application {
     border-radius: 15px;
-    width: 610px;
-    height:360px;
+    width: 250px;
+    height:150px;
     background-color: white;
-    background-image:url("./images/Screenshot-2023-02-17-094839.jpg");
+    /* background-image:url("./images/Screenshot-2023-02-17-094839.jpg"); */
     background-size:610px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
 }
-#Top-Application:hover{
-    background-image:url("./images/chrome-capture-2023-1-17(1).gif");
-} 
-.PasswordGenerator {
+
+.linkBox {
     font-weight: 900;
     margin: 15px;
     background-color: var(--3);
@@ -129,14 +131,43 @@ a {
     width: 620px;
 }
 
-.apps {
+#apps {
+      /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
     padding: 5px;
-    /* padding-left: 125px; */
-    font-size: 30px;
-    width: 620px;
+    justify-content: space-around;
+    /* padding-left: 380px; */
+    /* font-size: 30px; */
+    /* width: 620px; */
    
 }
-
+#showcase{
+    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    transition-property: display;
+    transition-duration: 20s;
+    transition-timing-function: linear;
+}
+#showcase:active{
+    display: none;
+}
+.showApplication {
+    border-radius: 15px;
+    width: 505px;
+    max-width: 100vw;
+    height:150px;
+    background-color: white;
+    /* background-image:url("./images/Screenshot-2023-02-17-094839.jpg"); */
+    /* background-size:610px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
 img {
     width: 100%;
      border-radius: 15px;
@@ -146,7 +177,10 @@ img.card-img-top {
     padding: 5px
 }
 
-
+.card-body {
+    padding: 7px;
+    justify-items: center;
+}
 .card-link {
     color: black;
 }
@@ -157,13 +191,12 @@ img.d-inline-block.align-text-top {
 }
 
 @media screen and (max-width: 400px) {
-    /* #applications{
-        align-items: stretch;
-        max-width: 400px;
-    } */
+    #applications {
+        padding-left: 0px;
+    }
 }
 
-@media screen and (max-width:1172px) {
+@media screen and (max-width:768px) {
     #main {
         display: flex;
         flex-flow: row wrap;
@@ -172,8 +205,16 @@ img.d-inline-block.align-text-top {
         align-content: stretch;
         align-items: flex-start;
         justify-content: center;
+        padding-left: 0px;
     }
-
+    .apps {
+        display: flex;
+        padding: 5px;
+        padding-left: 0px;
+        /* font-size: 30px; */
+        /* width: 620px; */
+       
+    }
     #Introduction.card {
         color: black;
         /* display: flex; */
@@ -186,5 +227,8 @@ img.d-inline-block.align-text-top {
         min-height: 420px;
         /* margin-left: 0px; */
         padding: 0px
+    }
+    #applications {
+        padding-left: 0px;
     }
 }
