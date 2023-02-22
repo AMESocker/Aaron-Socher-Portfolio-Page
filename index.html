@@ -28,7 +28,10 @@
                             <a class="nav-link active" aria-current="page" href="#Introduction">Info</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#applications">Applications</a>
+                            <a id="appNav"class="nav-link" href="Javascript:void(0)">Applications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aboutNav"class="nav-link" href="Javascript:void(0)">About</a>
                         </li>
                     </ul>
                 </div>
@@ -57,8 +60,8 @@
             </div>
         </div>
         <!--Intro Box-->
-        <div>
-            <!-- <div id="Name-Links">Full stack web developer with a passion for data-driven applications. Recently received a full stack web development certificate from UC Berkeley Extension. Professional background in customer service and education background in Geographical Information Systems (GIS), as well as computer and electronics technology. Strengths are attention to detail, empathy, and active listening.</div> -->
+        <div id="aboutSection">
+            <div id="Name-Links">Full stack web developer with a passion for data-driven applications. Recently received a full stack web development certificate from UC Berkeley Extension. Professional background in customer service and education background in Geographical Information Systems (GIS), as well as computer and electronics technology. Strengths are attention to detail, empathy, and active listening.</div>
             <!-- <div class="ProfileInfo"><a class="card-link" target="_blank"href="https://github.com/AMESocker">GitHub</a></div>GitHub Profile -->
             <!-- <div class="ProfileInfo"><a class="card-link" target="_blank"href="www.linkedin.com/in/aaron-socher">LinkedIn</a></div>LinkedIn Page -->
             <!-- <div class="ProfileInfo"><h2>Contact Info</h2></div> -->
@@ -72,6 +75,7 @@
                 <div class="Application">
                     <a class="linkBox" target="_blank"
                         href="https://amesocker.github.io/JavaScript-Password-Generator/">Password Generator</a>
+                        <p>Create a strong password by randomly generating a password using JavaScript.</p>
                     <a class="linkBox" target="_blank"
                         href="https://github.com/AMESocker/JavaScript-Password-Generator">GitHub Repo
                         <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
@@ -79,7 +83,8 @@
                 </div>
                 <!-- SQL Employee Tracker -->
                 <div class="Application">
-                    <a id="backEnd" class="linkBox"  href="">SQL Employee Tracker</a>
+                    <a id="backEnd" class="linkBox" target="_blank" href="https://app.castify.com/view/d34dbae5-82c3-4dd9-8ed7-bb4424fae145">SQL Employee Tracker</a>
+                    <p>A node application using SQL to track employee data.</p>
                     <a class="linkBox" target="_blank" href="https://github.com/AMESocker/SQL-Employee-Tracker">GitHub
                         Repo
                         <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
@@ -87,7 +92,8 @@
                 </div>
                 <!-- Social Network API -->
                 <div class="Application">
-                    <a id="backEnd" class="linkBox" href="">Social Network API</a>
+                    <a id="backEnd" class="linkBox" target="_blank" href="https://app.castify.com/view/080de5be-e9ae-4024-962a-50f2c33203f6">Social Network API</a>
+                    <p>An API for a social network using a MongoDB database.</p>
                     <a class="linkBox" target="_blank" href="https://github.com/AMESocker/Social-Network-API">GitHub
                         Repo
                         <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
@@ -96,6 +102,7 @@
                 <!-- Ghibli movie user reviews -->
                 <div class="Application">
                     <a class="linkBox" target="_blank" href="https://eiga-reviews.herokuapp.com/">Ghibli movie user reviews</a>
+                    <p>A node application using SQL to track employee data.</p>
                     <a class="linkBox" target="_blank"
                         href="https://github.com/AMESocker/Ghibli-Movie-Review-Site">GitHub Repo
                         <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
@@ -103,22 +110,20 @@
                 </div>
 
             </div>
-            <div id="showcase">
-                <div class="showApplication">
-                    <a class="linkBox" target="_blank"
-                        href="https://app.castify.com/view/d34dbae5-82c3-4dd9-8ed7-bb4424fae145">SQL Employee
-                        Tracker</a>
 
-                </div>
-                <div class="showApplication">
-                    <a class="linkBox" target="_blank"
-                        href="https://app.castify.com/view/d34dbae5-82c3-4dd9-8ed7-bb4424fae145">SQL Employee
-                        Tracker</a>
-
-                </div>
-            </div>
             <script>
-                document.getElementById('showcase').addEventListener()
+                document.getElementById('aboutNav').addEventListener("click",about);
+                document.getElementById('appNav').addEventListener("click",appShow);
+                function about(){
+                    console.log('about')
+                    applications.setAttribute("style","display: none");
+                    aboutSection.setAttribute("style","display: contents");
+                }
+                function appShow(){
+                    console.log('apps')
+                    applications.setAttribute("style","display: flex");
+                    aboutSection.setAttribute("style","display: none");
+                }
             </script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
