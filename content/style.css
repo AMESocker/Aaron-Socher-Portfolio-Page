@@ -24,6 +24,10 @@ a {
 }
 
 /*Double check case*/
+.container-fluid{
+    padding:5px !important;
+
+}
 #Header {
     padding: 0px;
     display: flex;
@@ -78,6 +82,8 @@ a {
     /* align-content: flex-start; */
     /* width: 1000px */
     /* margin-left: 330px; */
+    width: 650px;
+    height:300px;
 }
 
 .ProfileInfo {
@@ -104,6 +110,18 @@ a {
     display: none;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    padding: 10px; 
+    position: relative;
+    max-width: 100%;
+    padding-left: 296px;
+
+}
+#skillsSection {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     padding: 10px; 
     position: relative;
     max-width: 100%;

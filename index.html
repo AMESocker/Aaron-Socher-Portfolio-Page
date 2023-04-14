@@ -30,6 +30,9 @@
                         <li class="nav-item">
                             <a id="aboutNav"class="nav-link" href="Javascript:void(0)">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a id="skillsNav"class="nav-link" href="Javascript:void(0)">Skills</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -70,10 +73,33 @@
                 education background in Geographical Information Systems (GIS), as well as computer and electronics technology.
                 Strengths are attention to detail, empathy, and active listening.
             </div>
-            <!-- <div class="ProfileInfo"><a class="card-link" target="_blank"href="https://github.com/AMESocker">GitHub</a></div>GitHub Profile -->
-            <!-- <div class="ProfileInfo"><a class="card-link" target="_blank"href="www.linkedin.com/in/aaron-socher">LinkedIn</a></div>LinkedIn Page -->
-            <!-- <div class="ProfileInfo"><h2>Contact Info</h2></div> -->
-            <!-- <div class="ProfileInfo"><p>aaronsocher@gmail.com</p></div>Email Address -->
+
+        </div>
+        <div id="skillsSection">
+            <h2>Skills</h2>
+        
+            <div id="Name-Links">
+                <ul>
+                    <li> HTML5 </li>
+                    <li> JavaScript </li>
+                    <li> CSS </li>
+                    <li> APIs </li>
+                    <li> Bootstrap </li>
+                    <li> Node </li>
+                    <li> Express </li>
+                    <li> JSON </li>
+                    <!-- </ul>
+                    <ul> -->
+                    <li> MySQL </li>
+                    <li> JQuery </li>
+                    <li> MongoDB </li>
+                    <li> ReactJS </li>
+                    <li> Command Line </li>
+                    <li> Handlebars </li>
+                    <li> AJAX </li>
+                </ul>
+            </div>
+
         </div>
         <!--Applications Section-->
         <div id="applications">
@@ -122,14 +148,24 @@
             <script>
                 document.getElementById('aboutNav').addEventListener("click",about);
                 document.getElementById('appNav').addEventListener("click",appShow);
+                document.getElementById('skillsNav').addEventListener("click",skills);
                 function about(){
                     console.log('about')
-                    applications.setAttribute("style","display: none");
                     aboutSection.setAttribute("style","display: flex");
+                    applications.setAttribute("style","display: none");
+                    skillsSection.setAttribute("style","display: none");
                 }
                 function appShow(){
                     console.log('apps')
                     applications.setAttribute("style","display: flex");
+                    aboutSection.setAttribute("style","display: none");
+                    skillsSection.setAttribute("style","display: none");
+
+                }
+                function skills(){
+                    console.log('skills')
+                    skillsSection.setAttribute("style","display: flex");
+                    applications.setAttribute("style","display: none");
                     aboutSection.setAttribute("style","display: none");
                 }
             </script>
