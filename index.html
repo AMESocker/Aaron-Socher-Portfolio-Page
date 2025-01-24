@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="./content/style.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
 </head>
 
 <body>
@@ -25,76 +27,88 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a id="appNav"class="nav-link" href="Javascript:void(0)">Applications</a>
+                            <a id="appNav" class="nav-link" href="Javascript:void(0)">Applications</a>
                         </li>
                         <li class="nav-item">
-                            <a id="aboutNav"class="nav-link" href="Javascript:void(0)">About</a>
+                            <a id="aboutNav" class="nav-link" href="Javascript:void(0)">About</a>
                         </li>
                         <li class="nav-item">
-                            <a id="skillsNav"class="nav-link" href="Javascript:void(0)">Skills</a>
+                            <a id="skillsNav" class="nav-link" href="Javascript:void(0)">Skills</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
+    <div class="confetti-wrapper">
+        <!-- Confetti elements will be created using CSS -->
+    </div>
     <div id="main">
         <!-- Intro Card 1-->
         <div id="Introduction" class="card">
 
             <!-- <img src="https://placehold.co/286x286?text=Profile Picture" class="card-img-top" alt="..." /> -->
             <img style="border-radius: 200px; padding: 5px" src="./content/images/879850bc-166f-4469-80bc-bfb7eb58db72~2.jpg" class="card-img-top" alt="..." />
-            <!-- <img style="border-radius: 200px; padding: 5px" src="content\images\20240810_165614-EDIT.jpg" class="card-img-top" alt="..." /> -->
             <div class="card-body">
                 <div class="ProfileInfo">
                     <h2>Aaron Socher</h2>
+                    <h6>Full Stack Web Developer</h6>
+                    <div>"Building data-driven, responsive applications to solve real-world problems."</div>
                 </div>
-                <a class="card-link" target="_blank" href="https://github.com/AMESocker"><img style="height:40px; width:40px"
-                        src="./content/images/GitHub-Mark.png"></a>
+                <a class="card-link" target="_blank" href="https://github.com/AMESocker"><img
+                        style="height:40px; width:40px" src="./content/images/GitHub-Mark.png"></a>
                 <a class="card-link" target="_blank" href="https://www.linkedin.com/in/aaron-socher"><img
-                        style="border-radius: 00px;height:30px; width:30px" src="./content/images/61109.png"></a><br><br>
-<!--                 <a class="card-link" target="_blank" href="content/AaronSocherGeneralResume2025.pdf">Resume
+                        style="border-radius: 00px;height:30px; width:30px"
+                        src="./content/images/61109.png"></a><br><br>
+                <!--                 <a class="card-link" target="_blank" href="content/AaronSocherGeneralResume2025.pdf">Resume
                 </a><br /> -->
                 <a class="card-link" target="_blank" href="mailto:aaronsocher@gmail.com">aaronsocher@gmail.com
                 </a>
                 <br /><br />
                 <a class="card-link" style="padding: 00px;" target="_blank"
                     href="https://www.codewars.com/users/AMESocker">
-                    <img src="https://www.codewars.com/users/AMESocker/badges/micro">
-                    </a>
+                    <!-- <img src="https://www.codewars.com/users/AMESocker/badges/micro"> -->
+                </a>
             </div>
         </div>
         <!--Intro Box-->
         <div id="aboutSection">
             <h2>About</h2>
-        
-            <div id="Name-Links"><b>Full stack web developer with a passion for data-driven applications. </b><br><br>Earned a Full Stack Web Development Certificate from UC Berkeley Extension, alongside certifications in Back End Development and APIs (freeCodeCamp, July 2024), Front End Development Libraries (freeCodeCamp, July 2024), and JavaScript Algorithms and Data Structures (freeCodeCamp, March 2024).<br><br> I bring a professional background in customer service and academic experience in Geographical Information Systems (GIS) and computer/electronics technology. My strengths—attention to detail, empathy, and active listening—help me design user-focused and effective solutions.
+
+            <div id="about"><b>Full stack web developer with a passion for data-driven applications.
+                </b><br><br>Earned a Full Stack Web Development Certificate from UC Berkeley Extension, alongside
+                certifications in Back End Development and APIs (freeCodeCamp, July 2024), Front End Development
+                Libraries (freeCodeCamp, July 2024), and JavaScript Algorithms and Data Structures (freeCodeCamp, March
+                2024).<br><br> I bring a professional background in customer service and academic experience in
+                Geographical Information Systems (GIS) and computer/electronics technology. My strengths—attention to
+                detail, empathy, and active listening—help me design user-focused and effective solutions.
             </div>
 
         </div>
         <div id="skillsSection">
             <h2>Skills</h2>
-        
-            <div id="Name-Links">
-                <ul>
-                    <li> HTML5 </li>
-                    <li> JavaScript </li>
-                    <li> CSS </li>
-                    <li> APIs </li>
-                    <li> Bootstrap </li>
-                    <li> Node </li>
-                    <li> Express </li>
-                    <li> JSON </li>
-                    <!-- </ul>
-                    <ul> -->
-                    <li> MySQL </li>
-                    <li> JQuery </li>
-                    <li> MongoDB </li>
-                    <li> ReactJS </li>
-                    <li> Command Line </li>
-                    <li> Handlebars </li>
-                    <li> AJAX </li>
+
+            <div id="skills">
+                <div id="skillsIcons">
+                    <i class="devicon-html5-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-css3-plain"></i>
+                    <i class="devicon-vscode-plain"></i>
+                    <i class="devicon-bootstrap-plain"></i>
+                    <i class="devicon-git-plain"></i>
+                    <i class="devicon-nodejs-plain"></i>
+                    <i class="devicon-express-original"></i>
+                    <i class="devicon-json-plain"></i>
+                    <i class="devicon-mysql-original"></i>
+                    <i class="devicon-jquery-plain"></i>
+                    <i class="devicon-mongodb-plain"></i>
+                    <i class="devicon-react-original"></i>
+                    <i class="devicon-handlebars-original"></i>
+                </div>
+                <ul id="skillsList">
+                    <li>Frontend :  HTML5, CSS3, JavaScript, Bootstrap, React, jQuery, Handlebars</li>
+                    <li> Backend : Node.js, Express, MongoDB, MySQL</li>
+                    <li> Other Tools : APIs, JSON, VS Code, Git </li>
                 </ul>
             </div>
 
@@ -102,49 +116,99 @@
         <!--Applications Section-->
         <div id="applications">
             <h2>Applications</h2>
+
             <div id="apps">
-                <!-- Password Generator -->
-                <div class="Application">
-                    <a class="linkBox" target="_blank"
-                        href="https://amesocker.github.io/JavaScript-Password-Generator/">Password Generator</a>
-                        <p>Create a strong password by randomly generating a password using JavaScript.</p>
-                    <a class="linkBox" target="_blank"
-                        href="https://github.com/AMESocker/JavaScript-Password-Generator">GitHub Repo
-                        <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
-                    </a>
-                </div>
+                <!-- a bulleted section of projects -->
                 <!-- Phone Number Validator -->
                 <div class="Application">
-                    <a class="linkBox" target="_blank"
-                        href="https://amesocker.github.io/JavaScript-Password-Generator/">Phone Number Validator</a>
-                        <p>A phone number validation script for US numbers using Regular Expressions.</p>
-                    <a class="linkBox" target="_blank"
-                        href="https://github.com/AMESocker/freeCodeCamp/tree/main/Learn/C02%20JavaScript%20Algorithms%20and%20Data%20Structures/3/5%20Phone%20Number%20Validator%20(Cert%20Project)">GitHub Repo
-                        <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
-                    </a>
+                    <h4>Phone Number Validator</h4>
+                    <ul>
+                        <li>A phone number validation script for US numbers using Regular Expressions.</li>
+                        <li>Built with JavaScript, HTML, CSS.</li>
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/AMESocker/freeCodeCamp/tree/main/Learn/C02%20JavaScript%20Algorithms%20and%20Data%20Structures/3/5%20Phone%20Number%20Validator%20(Cert%20Project)">GitHub
+                                Repository </a>
+                        </li>
+                    </ul>
                 </div>
+                <!-- <hr> -->
                 <!-- Calculator -->
                 <div class="Application">
-                    <a class="linkBox" target="_blank"
-                        href="https://codepen.io/AMESocker/pen/ExzbjjO?editors=1000">Calculator</a>
-                        <p>A basic React-based calculator application with two main components.</p>
-                    <a class="linkBox" target="_blank"
-                        href="https://github.com/AMESocker/freeCodeCamp/tree/main/Learn/C03%20Front%20End%20Development/07%20Front%20End%20Projects/4%20Calculator">GitHub Repo
-                        <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
-                    </a>
+                    <h4>Calculator</h4>
+                    <ul>
+                        <li>A basic React-based calculator application with two main components.</li>
+                        <li>Built with React, JavaScript, HTML, CSS.</li>
+                        <li>
+                            <a target="_blank" href="https://codepen.io/AMESocker/pen/ExzbjjO?editors=1000">View
+                                Live</a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/AMESocker/freeCodeCamp/tree/main/Learn/C03%20Front%20End%20Development/07%20Front%20End%20Projects/4%20Calculator">GitHub
+                                Repository
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
                 </div>
                 <!-- URL Shortener Microservice -->
                 <div class="Application">
-                    <a class="linkBox" target="_blank"
-                        href="">URL Shortener</a>
-                        <p>An Express.js application that provides a basic URL shortening service.</p>
-                    <a class="linkBox" target="_blank"
-                        href="https://github.com/AMESocker/freeCodeCamp/tree/main/Learn/C06%20Back%20End%20Development%20and%20APIs/4%20Back%20End%20Development%20and%20APIs%20Projects/3%20URL%20Shortener">GitHub Repo
-                        <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
-                    </a>
-                </div>                                 
+                    <h4>URL Shortener</h4>
+                    <ul>
+                        <li>An Express.js application that provides a basic URL shortening service.</li>
+                        <li>Built with Node.js, Express, JavaScript, HTML, CSS.</li>
+                        <li>
+                            <a target="_blank"
+                                href="https://github.com/AMESocker/freeCodeCamp/tree/main/Learn/C06%20Back%20End%20Development%20and%20APIs/4%20Back%20End%20Development%20and%20APIs%20Projects/3%20URL%20Shortener">GitHub
+                                Repository
+
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
+                </div>
+
+                <!-- Password Generator -->
+                <div class="Application">
+                    <h4>Password Generator</h4>
+                    <ul>
+                        <li>A password generator that creates a strong password using JavaScript.</li>
+                        <li>Built with JavaScript, HTML, CSS.</li>
+                        <li>
+                            <a target="_blank"                                href="https://amesocker.github.io/JavaScript-Password-Generator/">View Live</a>
+                        </li>
+                        <li>
+                            <a target="_blank"
+                            href="https://github.com/AMESocker/JavaScript-Password-Generator">GitHub Repository
+                            <!-- <img src="https://via.placeholder.com/610x200?text=Password Generator" /> -->
+                            </a>
+                        </li>
+                </div>
+                <!-- Ghibli movie user reviews -->
+                <div class="Application">
+                    <h4>Eiga (User Movie Reviews)</h4>
+                    <ul>
+                        <li>A user Ghibli movie review site.</li>
+                        <li>Built with Node.js, Express.js, JavaScript, HTML, CSS.</li>
+                        <li>
+                            <a target="_blank"
+                            href="https://github.com/AMESocker/Ghibli-Movie-Review-Site">GitHub Repository
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Investor Rest -->
+                <div class="Application">
+                    <h4>Investor Rest</h4>
+                    <ul>
+                        <li>Helps users to look for Airbnb investment properties based on a location</li>
+                        <li>Built with Node.js, Express.js, JavaScript, HTML, CSS.</li>
+                        <li><a  target="_blank" href="https://github.com/AMESocker/investorrest">GitHub Repository</a></li>
+                    </ul>
+                </div>
                 <!-- SQL Employee Tracker -->
-      <!--           <div class="Application">
+                <!--           <div class="Application">
                     <a id="backEnd" class="linkBox" target="_blank" href="https://app.castify.com/view/d34dbae5-82c3-4dd9-8ed7-bb4424fae145">SQL Employee Tracker</a>
                     <p>A node application using SQL to track employee data.</p>
                     <a class="linkBox" target="_blank" href="https://github.com/AMESocker/SQL-Employee-Tracker">GitHub
@@ -152,51 +216,48 @@
                     </a>
                 </div> -->
                 <!-- Social Network API -->
-   <!--              <div class="Application">
+                <!--              <div class="Application">
                     <a id="backEnd" class="linkBox" target="_blank" href="https://app.castify.com/view/080de5be-e9ae-4024-962a-50f2c33203f6">Social Network API</a>
                     <p>An API for a social network using a MongoDB database.</p>
                     <a class="linkBox" target="_blank" href="https://github.com/AMESocker/Social-Network-API">GitHub
                         Repo
                     </a>
                 </div> -->
-                <!-- Ghibli movie user reviews -->
-<!--                 <div class="Application">
-                    <a class="linkBox" target="_blank" href="https://eiga-reviews.herokuapp.com/">Ghibli movie user reviews</a>
-                    <p>A Ghibli movie review site using RESTful routes, Express.js and Node.js</p>
-                    <a class="linkBox" target="_blank"
-                        href="https://github.com/AMESocker/Ghibli-Movie-Review-Site">GitHub Repo
-                    </a>
-                </div> -->
+                <br>
+
 
             </div>
 
-            <script>
-                document.getElementById('aboutNav').addEventListener("click",about);
-                document.getElementById('appNav').addEventListener("click",appShow);
-                document.getElementById('skillsNav').addEventListener("click",skills);
-                function about(){
-                    console.log('about')
-                    aboutSection.setAttribute("style","display: flex");
-                    applications.setAttribute("style","display: none");
-                    skillsSection.setAttribute("style","display: none");
-                }
-                function appShow(){
-                    console.log('apps')
-                    applications.setAttribute("style","display: flex");
-                    aboutSection.setAttribute("style","display: none");
-                    skillsSection.setAttribute("style","display: none");
+        </div>
+    </div>
 
-                }
-                function skills(){
-                    console.log('skills')
-                    skillsSection.setAttribute("style","display: flex");
-                    applications.setAttribute("style","display: none");
-                    aboutSection.setAttribute("style","display: none");
-                }
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-                crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('aboutNav').addEventListener("click", about);
+        document.getElementById('appNav').addEventListener("click", appShow);
+        document.getElementById('skillsNav').addEventListener("click", skills);
+        function about() {
+            console.log('about')
+            aboutSection.setAttribute("style", "display: flex");
+            applications.setAttribute("style", "display: none");
+            skillsSection.setAttribute("style", "display: none");
+        }
+        function appShow() {
+            console.log('apps')
+            applications.setAttribute("style", "display: flex");
+            aboutSection.setAttribute("style", "display: none");
+            skillsSection.setAttribute("style", "display: none");
+
+        }
+        function skills() {
+            console.log('skills')
+            skillsSection.setAttribute("style", "display: flex");
+            applications.setAttribute("style", "display: none");
+            aboutSection.setAttribute("style", "display: none");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
