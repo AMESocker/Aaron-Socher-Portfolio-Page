@@ -43,6 +43,19 @@ a {
     margin: 5px;
 }
 
+#navbarNav .nav-link {
+    color: var(--1);
+    padding: 10px 10px;
+    /* transition: background-color 0.5s ease, color 0.5s ease; */
+}
+
+#navbarNav .nav-link.active {
+    background-color: var(--1);
+    color: var(--2);
+    font-weight: bold;
+    border-radius: 30px;
+}
+
 #main {
     display: flex;
     flex-flow: row wrap;
@@ -139,6 +152,25 @@ a {
     background-color: var(--4);
     border-radius: 15px;
 }
+
+#skillsIcons i {
+    /* color: var(--1); */
+    background-color: var(--4); 
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+
+/* Hover effect for better UI */
+#skillsIcons i:hover {
+    transform: scale(1.1);
+    background-color: var(--1);
+    color: var(--4);
+    /* font-size: 60px; */
+}
+
+
 i{
     color: black;
     padding: 4px;
@@ -196,6 +228,9 @@ i{
     color: var(--1);
     text-decoration: none;
 }
+
+
+
 p,li{
     color: var(--1);
     line-height: 18px;
@@ -290,6 +325,13 @@ img.card-img-top {
     color: black;
 }
 
+
+.card-link:hover {
+    opacity: 1.7;
+    transition: opacity 0.3s;
+}
+
+
 img.d-inline-block.align-text-top {
     height: 60px;
     border-radius: 30px;
@@ -303,15 +345,35 @@ img.d-inline-block.align-text-top {
 
 @media screen and (max-width:768px) {
     #main {
-        display: flex;
+        /* display: flex;
         flex-flow: row wrap;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: stretch;
         align-items: flex-start;
         justify-content: center;
-        padding-left: 0px;
+        padding-left: 0px; */
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
     }
+    #Header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .Header-Items {
+        padding: 10px;
+    }
+
+    #navbarNav .nav-link {
+        padding: 12px;
+        text-align: center;
+        display: block;
+    }
+
     .apps {
         display: flex;
         padding: 5px;
@@ -320,20 +382,35 @@ img.d-inline-block.align-text-top {
         /* width: 620px; */
        
     }
+
     #Introduction.card {
-        color: black;
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        /* justify-content:flex-start; */
-        flex-direction: column;
-        align-items: center;
-        margin: 55px;
         position: relative;
-        min-height: 420px;
-        /* margin-left: 0px; */
-        padding: 0px
+        display: flex; 
+        flex-direction: row; 
+        width: 80%; /* Ensure it fits within the viewport */
+        min-height: auto; /* Let content define height */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px; /* Add some padding to prevent content from touching edges */
+        border-radius: 60px 60px 60px 60px; /* Make the card more rounded */
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Align content in the center horizontally */
     }
-    #applications {
-        padding-left: 0px;
+    #Introduction.card img {
+        width: 50%; /* Make the image take up 50% of the width */
+        margin-right: 10px; /* Add space between image and text */
+        max-width: 150px;
+        margin-bottom: 10px;
     }
+
+    #Introduction.card .ProfileInfo {
+        flex: 1; /* Allow ProfileInfo to take up remaining space */
+        padding: 10px;
+    }
+
+    #applications, #aboutSection, #skillsSection {
+        padding-left: 0;
+        width: 100%;
+    }
+    
 }
