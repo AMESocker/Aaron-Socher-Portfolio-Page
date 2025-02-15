@@ -127,7 +127,7 @@ a.card-link {
     transition: opacity 0.3s;
 }
 #applications {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
