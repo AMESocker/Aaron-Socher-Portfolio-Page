@@ -9,8 +9,6 @@ function about() {
   //if screen is less than 768px, hide #Introduction
   if (window.innerWidth < 768) {
     document.getElementById('Introduction').setAttribute("style", "display: flex");
-  }else{
-    document.getElementById('Introduction').setAttribute("style", "display: flex");
   }
 }
 function appShow() {
