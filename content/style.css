@@ -89,12 +89,43 @@ a {
     background-color: white;
     border-radius: 10px;
 }
+.card-body {
+    padding: 7px;
+    justify-content: center;
+}
 .ProfileInfo {
     padding: 5px;
     color: black;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.ProfileInfo.links {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.ProfileInfo.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+a.card-link {
+    color: black;
+    height: 40px;
+    width: 40px;
 }
 
+
+.card-link:hover {
+    opacity: 1.7;
+    transition: opacity 0.3s;
+}
 #applications {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +200,6 @@ a {
     color: var(--4);
     /* font-size: 60px; */
 }
-
 
 i{
     color: black;
@@ -317,19 +347,8 @@ img.card-img-top {
     padding: 5px
 }
 
-.card-body {
-    padding: 7px;
-    justify-items: center;
-}
-.card-link {
-    color: black;
-}
 
 
-.card-link:hover {
-    opacity: 1.7;
-    transition: opacity 0.3s;
-}
 
 
 img.d-inline-block.align-text-top {
@@ -373,7 +392,6 @@ img.d-inline-block.align-text-top {
         text-align: center;
         display: block;
     }
-
     .apps {
         display: flex;
         padding: 5px;
@@ -386,7 +404,7 @@ img.d-inline-block.align-text-top {
     #Introduction.card {
         position: relative;
         display: flex; 
-        flex-direction: row; 
+        /* flex-direction: row;  */
         width: 80%; /* Ensure it fits within the viewport */
         min-height: auto; /* Let content define height */
         margin-left: auto;
