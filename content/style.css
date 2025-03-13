@@ -2,10 +2,12 @@
 :root {
     padding:0px;
     margin: 0px;
+    --0:#000000;
     --1:#514e96;
     --2:#77ACF1;
     --3:#3EDBF0;
     --4:#C0FEFC; 
+    
 }
 /* :root {
     --1: #98A8F8;
@@ -219,6 +221,20 @@ i{
 #skillsList{
     font-size: 17px;
 }
+
+#skillsList li {
+    transition: background 0.3s ease;
+    padding: 5px;
+}
+
+#skillsList item.highlight {
+    background-color: var(--1);
+    color: var(--4);
+    padding: 1px 0px 1px 0px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+}
+
 .Application {
     border-radius: 15px;
     width: 85%;

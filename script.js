@@ -57,6 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+//Skills Highlight
+document.querySelectorAll("#skillsIcons i").forEach(icon => {
+  icon.addEventListener("mouseenter", () => {
+      let skill = icon.getAttribute("data-skill");
+      document.querySelectorAll(`#skillsList item[data-skill="${skill}"]`).forEach(li => {
+          li.classList.add("highlight");
+      });
+  });
+
+  icon.addEventListener("mouseleave", () => {
+      document.querySelectorAll("#skillsList item").forEach(li => {
+          li.classList.remove("highlight");
+      });
+  });
+});
+
+
+
 //dark mode
 const darkMode = document.getElementById('darkMode');
 const body = document.body;
