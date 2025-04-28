@@ -1,6 +1,9 @@
 document.getElementById('aboutNav').addEventListener("click", about);
 document.getElementById('appNav').addEventListener("click", appShow);
 document.getElementById('skillsNav').addEventListener("click", skills);
+const aboutSection = document.getElementById("aboutSection");
+const skillsSection = document.getElementById("skillsSection");
+const applications = document.getElementById("applications");
 function about() {
   console.log('about')
   aboutSection.setAttribute("style", "display: flex");
@@ -76,13 +79,33 @@ document.querySelectorAll("#skillsIcons i").forEach(icon => {
 
 
 //dark mode
-const darkMode = document.getElementById('darkMode');
+const toggleButton = document.getElementById("dark-mode-toggle");
 const body = document.body;
-darkMode.addEventListener('click', () => {
-  body.classList.toggle('dark');
-  if (body.classList.contains('dark')) {
-    darkMode.innerHTML = 'Light Mode';
+
+// Check local storage for theme preference
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-mode");
+  aboutSection.classList.add("dark-mode");
+}
+
+// Toggle dark mode
+toggleButton.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  aboutSection.classList.toggle("dark-mode");
+  
+  // Save user preference
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+    toggleButton.textContent = "☀️ Light Mode";
   } else {
-    darkMode.innerHTML = 'Dark Mode';
+    localStorage.setItem("theme", "light");
+    toggleButton.textContent = "🌙 Dark Mode";
+  }
+});
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    document.getElementById("dark-mode-toggle").textContent = "☀️ Light Mode";
   }
 });
